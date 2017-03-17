@@ -1,0 +1,7 @@
+CREDS_CONTAINER: { id: 'create_account' }
+NAME: {id: 'id_name'}
+EMAIL: {id: 'id_email'}
+PASSWORD: {id: 'id_password'}
+CONTINUE_BTN: {id: 'continue_button'}
+ALRY_ACC_STMT: {xpath: ".//*[@id='create_account']/div[5]/div[2]/span"}
+ENTR_URL: {id: 'id_url'}

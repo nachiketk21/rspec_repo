@@ -1,0 +1,6 @@
+FAILURE_PAGE: { css: '.alert.alert-error' }
+LOGIN_BUTTON: {xpath: ".//*[@id='header']/div/img"}
+USERNAME_INPUT: { id: 'email' }
+PASSWORD_INPUT: { id: 'password' }
+SUBMIT_BUTTON: { id: 'ss_login' }
+ADD_NEW_SITE: {xpath: ".//*[@id='mainbody']/ul/li[2]/div[1]/button"}
