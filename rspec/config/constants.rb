@@ -12,4 +12,7 @@ module Constants
 	PASSWORD_DEFAULT = 'test1234'
 	FIRST_NAME_DEFAULT = 'Joe'
 	LAST_NAME_DEFAULT = 'Doe'
+
+	STORE_URL = 'https://nachiketteststore.myshopify.com/'
+	LOYALTY_PROG = 'Bee Loyal'
 end

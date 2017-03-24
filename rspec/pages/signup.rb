@@ -1,6 +1,6 @@
 require_relative '../config/filenames'
-require_relative FileNames::PAGES_SIGNUP
-require_relative FileNames::LIB_COMMON_PAGE
+require_relative '../pages/signup'
+require_relative '../lib/common_page'
 
 class SignUp < CommonPage
   LOCATOR = YAML.load_file(File.open(FileNames::LOCATORS_SIGNUP))
@@ -60,7 +60,6 @@ class SignUp < CommonPage
     enter_cpn_codes(6, 9, '4_CPN_ADD', '4_CPN_CODES', '4_CPN_CODES_BTN')
     enter_cpn_codes(4, 6, '3_CPN_ADD', '3_CPN_CODES', '3_CPN_CODES_BTN')
     button_click(LOCATOR['THRD_SCN_BTN'])
-    return true
   end
 
   def enter_cpn_codes(arr,max_arr,opn_txt_bx,etr_cd,ad_btn)
