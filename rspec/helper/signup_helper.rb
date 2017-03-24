@@ -11,13 +11,14 @@ class SignupHelper < SignUp
 	def persnl_creds
     visit(Paths::SIGNUP)
     fill_form
+    first_screen
+    second_screen
+    add_coupons_screen
+    theme
+  end
 
-=begin
-    if pass==true
-      success_message_present?.should == true
-    else
-      failure_message_present?.should == true
-    end
-=end
-	end
+  def quit
+    driver.quit
+  end
+
 end

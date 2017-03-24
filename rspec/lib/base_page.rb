@@ -9,9 +9,13 @@ class BasePage
 
 	def initialize(driver)
 		@driver = driver		#= super(driver)
-		@driver.manage.timeouts.implicit_wait	= 60
+		@driver.manage.timeouts.implicit_wait	= 20
 		#@driver.manage.timeouts.script_timeout	= 60
 		#@driver.manage.timeouts.page_load		= 60
+	end
+
+	def quit
+		@driver.quit
 	end
 
 	# ----------------------------------------------------------------
@@ -162,4 +166,8 @@ class BasePage
 	# ----------------------------------------------------------------
 	#Other methods
 	# ----------------------------------------------------------------
+  def scroll_down(locator)
+    ele = find(locator)
+    ele.location_once_scrolled_into_view
+  end
 end
