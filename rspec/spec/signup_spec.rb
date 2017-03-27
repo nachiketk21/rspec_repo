@@ -11,11 +11,12 @@ RSpec.describe 'New sign up on zinrelo' do
     @driver.window_maximize
   end
 
-  after :all do
-    @driver.quit
-  end
+  # after :all do
+  #   @driver.quit
+  # end
 
   it 'should signup and create a new user' do
-    #@driver.persnl_creds
+    @driver.persnl_creds
+    @driver.quit
   end
 end
