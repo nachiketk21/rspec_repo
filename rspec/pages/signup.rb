@@ -9,14 +9,14 @@ class SignUp < CommonPage
     name	= parameters[:name] || Constants::FIRST_NAME_DEFAULT
     passwd	= parameters[:password] || Constants::PASSWORD_DEFAULT
     $a = rand(9999)
-    email_id = 'nachiket+'+"#{$a}"+'@shopsocially.com'
+    email_id = "nachiket+#{$a}@shopsocially.com"
 
     type(LOCATOR['NAME'], name)
     type(LOCATOR['EMAIL'], email_id)
     type(LOCATOR['PASSWORD'], passwd)
     button_click(LOCATOR['CONTINUE_BTN'])
     p is_displayed?(LOCATOR['ENTR_URL'])
-    sleep 5
+    sleep 2
   end
 
   def first_screen
@@ -44,15 +44,15 @@ class SignUp < CommonPage
                   '2% Off Coupon for 5 points', '$10 Off Coupon for 100 points']
     j = 1
     header_txt.each do |i|
-      hdr = find(LOCATOR["#{j}"+'_CPN']).text
-      if hdr == i
-        puts "#{hdr} " +'Text present'
-      else
-        puts "#{hdr} "+'Text not present'
-      end
+      hdr = find(LOCATOR["#{j}_CPN"]).text
+      puts "#{hdr} " + 'Text present' if hdr == i
       j += 1
-    end
-    enter_cpn_codes(0, 2,'1_CPN_ADD', '1_CPN_CODES', '1_CPN_CODES_BTN')
+      end
+    send_coupons
+  end
+
+  def send_coupons
+    enter_cpn_codes(0, 2, '1_CPN_ADD', '1_CPN_CODES', '1_CPN_CODES_BTN')
     enter_cpn_codes(2, 4, '2_CPN_ADD', '2_CPN_CODES', '2_CPN_CODES_BTN')
     button_click(LOCATOR['4_CPN_ADD'])
     scroll_down(LOCATOR['4_CPN_CODES'])
@@ -62,7 +62,7 @@ class SignUp < CommonPage
     button_click(LOCATOR['THRD_SCN_BTN'])
   end
 
-  def enter_cpn_codes(arr,max_arr,opn_txt_bx,etr_cd,ad_btn)
+  def enter_cpn_codes(arr, max_arr, opn_txt_bx, etr_cd, ad_btn)
     codes = %w(z i n r e l o r f)
     i = arr
     button_click(LOCATOR["#{opn_txt_bx}"])
@@ -75,9 +75,10 @@ class SignUp < CommonPage
   end
 
   def theme
-    sleep 5
+    sleep 3
     themes = %w(UBER_COOL SPRING OCEAN SUMMER BERRY CLASSIC LIMESTN GRACE)
-    theme_names = %w(uber_cool spring ocean summer berry classic limestone grace)
+    theme_names = %w(uber_cool spring ocean summer berry
+                     classic limestone grace)
     j = 0
     themes.each do |i|
       button_click(LOCATOR[i])
@@ -87,5 +88,4 @@ class SignUp < CommonPage
     end
     button_click(LOCATOR['FOURTH_SCN_BTN'])
   end
-
 end

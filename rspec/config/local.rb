@@ -2,4 +2,4 @@
 # Purpose:	Default Selenium settings
 # ================================================================
 
-ENV['browser']			||= 'firefox'				#Possible value: 'firefox' or 'chrome'
+ENV['browser'] ||= 'firefox' # Possible value: 'firefox' or 'chrome'
