@@ -73,11 +73,7 @@ class BasePage
   end
 
   def text_present(locator)
-    begin
-      return find(locator).text
-    rescue
-      return 'true'
-    end
+    find(locator).text
   end
 
   # Forms: input, buttons & select ---------------------------------------------
@@ -87,6 +83,7 @@ class BasePage
   end
 
   def type(locator, text)
+    wait_for(locator)
     find(locator).send_keys(text)
   end
 
@@ -115,7 +112,7 @@ class BasePage
   end
 
   def button_click(locator)
-    #wait_for(locator)
+    wait_for(locator)
     find(locator).click
   end
 

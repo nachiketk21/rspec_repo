@@ -4,7 +4,8 @@
 
 module Paths
   SS_URL = 'https://shopsocially.com/store'
-  LOGOUT = '/logout'
+  SS_URL_STAGE = 'https://yoda.shopsocially.com/store'
+  LOGOUT = SS_URL + '/logout'
   SIGNUP = SS_URL + '/signup'
-  LOGIN = '/login'
+  LOGIN = SS_URL + '/login'
 end

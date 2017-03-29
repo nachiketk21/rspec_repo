@@ -1,10 +1,11 @@
-FAILURE_MSG: { id: 'alert_msg' }
-USERNAME_INPUT: { id: 'id_email' }
-PASSWORD_INPUT: { id: 'id_password' }
-LOGIN_BUTTON: { id: 'id_login_button' }
+FAILURE_MSG: {id: 'alert_msg' }
+USERNAME_INPUT: {id: 'id_email' }
+PASSWORD_INPUT: {id: 'id_password' }
+LOGIN_BUTTON: {id: 'id_login_button' }
 ADD_NEW_SITE: {id: 'id_redirect_signup'}
 FORGOT_PASS_LINK: {id: 'id_reset_password_email'}
 SIGN_UP_LINK: {id: 'id_redirect_signup'}
 CLOSE_ALERT: {id: 'close_alert'}
 RESET_PASS_BTN: {id: 'reset_pwd_email_button'}
-RESET_PASS_ERR_MSG: {id:, 'alert_box'}
+RESET_PASS_ERR_MSG: {id: 'alert_box'}
+HOME_SCREEN: {class: 'user-display-name'}

@@ -1,25 +1,25 @@
 # ================================================================
 # Purpose:	check all login combinations and see if it passes/fails as expected
 # ================================================================
+require_relative '../helper/login_helper'
+require 'rspec'
+require 'selenium-webdriver'
+require '../spec/spec_helper'
+require_relative '../lib/base_page'
 
-require_relative 'spec_helper'
-require_relative FileNames::HELPER_LOGIN
+RSpec.describe 'Test login page' do
 
-
-describe 'Test login page' do
-	before(:each) do
-    @driver = Selenium::WebDriver.for :firefox
-		@loginHelper = LoginHelper.new(@driver)
+  before(:all) do
+    @driver = LoginHelper.new Selenium::WebDriver.for :firefox
+    @driver.window_maximize
   end
 
-	after(:all) do
+  it 'should give error for wrong credentials' do
+    @driver.negative_tests
+  end
+
+  it 'should login with correct credentials' do
+    @driver.new_login
     @driver.quit
-	end
-
-	it 'positive-email' do
-		print "RUNNING TEST: positive-email\n"
-    @loginHelper.new_login
-
-		#@loginHelper.test(true, :username => Constants::EMAIL_DEFAULT)
   end
 end

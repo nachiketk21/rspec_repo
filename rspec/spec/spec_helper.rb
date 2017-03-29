@@ -4,37 +4,31 @@
 
 require 'selenium-webdriver'
 require_relative '../config/constants'
-require_relative '../config/filenames'
 require_relative '../config/paths'
 
 
 RSpec.configure do |config|
-	config.include Constants
-	config.include FileNames
-	config.include Paths
+  config.include Constants
+  config.include Paths
 
-	config.before(:each) do
-		case ENV['browser']
-		when 'firefox'
-			@driver = Selenium::WebDriver.for :firefox
-			@driver.manage.timeouts.implicit_wait	= 60
-		when 'chrome'
-			Selenium::WebDriver::Chrome::Service.executable_path = File.join(Dir.pwd, '../vendor/chromedriver')
-			@driver = Selenium::WebDriver.for :chrome
-		end
-  end
-
-  # config.after(:all) do
-		# @driver.quit
-  # end
+  config.before(:each) do
+    case ENV['browser']
+      when 'firefox'
+        @driver = Selenium::WebDriver.for :firefox
+        @driver.manage.timeouts.implicit_wait	= 60
+      when 'chrome'
+        Selenium::WebDriver::Chrome::Service.executable_path = File.join(Dir.pwd, '../vendor/chromedriver')
+        @driver = Selenium::WebDriver.for :chrome
+      end
+    end
 end
 
 
 
 
-	# ================================================================
-	# Purpose:	just to run any test
-	# ================================================================
+# ================================================================
+# Purpose:	just to run any test
+# ================================================================
 
 # 	require_relative 'spec_helper'
 # 	# noinspection RubyResolve

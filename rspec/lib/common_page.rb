@@ -9,7 +9,7 @@ class CommonPage < BasePage
   end
 
   def visit(url_path)
-    if url_path =~ URI
+    if url_path =~ URI::regexp
       # Correct URL (ex: http://www.google.com)
       super
     else
