@@ -1,0 +1,13 @@
+PROFILE: {xpath: ".//*[@id='left_menu_content']/div[1]/span/a[1]"}
+FRGT_PASS_BTN: {id: 'id_reset_password_email'}
+USERNAME_INPUT: {id: 'id_email' }
+OLD_PASS: {id: 'old_password'}
+NEW_PASS: {id: 'new_password'}
+CNFRM_PASS: {id: 'confirm_new_password'}
+BCK_LOGIN_BTN: {id: 'redirect_to_login'}
+SND_INST_BTN: {id: 'reset_pwd_email_button'}
+PRFL_HEADR: {xpath: ".//*[@id='right_menu_content']/div/div[1]/div"}
+SAVE_BTN: {id: 'update_user_profile'}
+MAIL_NEW_PASS: {id: 'id_password'}
+MAIL_CNRM_PASS: {id: 'id_confirm_password'}
+

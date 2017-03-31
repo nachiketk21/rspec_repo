@@ -16,5 +16,11 @@ module Constants
 
   STORE_URL = 'https://nachiketteststore.myshopify.com/'
   LOYALTY_PROG = 'Bee Loyal'
+
+  USERNAME_FORGOT_PROFILE = 'nachiket+profile@shopsocially.com'
+  EMAIL_PASSWRD = '12345test'
+  OLD_PASS = 'test1234'
+  USERNAME_FORGOT = 'nachiket+forgot@shopsocially.com'
+  PASSWORD_FORGOT = 'test1234'
   # rubocop:enable Style/MutableConstant
 end

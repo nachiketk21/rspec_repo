@@ -20,5 +20,4 @@ class SignupHelper < SignUp
   def quit
     @driver.quit
   end
-
 end
