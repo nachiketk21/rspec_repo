@@ -11,7 +11,7 @@ module Constants
 
   USERNAME_DEFAULT = 'nachiket+zinrelo@shopsocially.com'
   PASSWORD_DEFAULT = 'test12345'
-  FIRST_NAME_DEFAULT = 'Joe'
+  FIRST_NAME_DEFAULT = 'James'
   LAST_NAME_DEFAULT = 'Doe'
 
   STORE_URL = 'https://nachiketteststore.myshopify.com/'
@@ -19,8 +19,10 @@ module Constants
 
   USERNAME_FORGOT_PROFILE = 'nachiket+profile@shopsocially.com'
   EMAIL_PASSWRD = '12345test'
-  OLD_PASS = 'test1234'
+  NEW_PASS = 'test12346'
   USERNAME_FORGOT = 'nachiket+forgot@shopsocially.com'
-  PASSWORD_FORGOT = 'test1234'
+  PASSWORD_FORGOT = 'test12345'
+  EMAIL_USERNAME = 'shopsmayank@gmail.com'
+  EMAIL_PASSWORD = 'shop2010'
   # rubocop:enable Style/MutableConstant
 end

@@ -11,7 +11,6 @@ class SignUp < CommonPage
     $a = rand(9999)
     email_id = "nachiket+#{$a}@shopsocially.com"
 
-
     type(LOCATOR['NAME'], name)
     type(LOCATOR['EMAIL'], email_id)
     type(LOCATOR['PASSWORD'], passwd)
