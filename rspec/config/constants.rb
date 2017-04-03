@@ -22,6 +22,7 @@ module Constants
   NEW_PASS = 'test12346'
   USERNAME_FORGOT = 'nachiket+forgot@shopsocially.com'
   PASSWORD_FORGOT = 'test12345'
+  EMAIL_USER = 'shopsmayank+test@gmail.com'
   EMAIL_USERNAME = 'shopsmayank@gmail.com'
   EMAIL_PASSWORD = 'shop2010'
   # rubocop:enable Style/MutableConstant

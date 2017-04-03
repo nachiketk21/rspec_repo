@@ -14,5 +14,7 @@ class ForgotPassHelper < ForgotPassword
   def frgt_pass_mail
     visit(Paths::LOGIN)
     pass_chnge_email
+    retrieve_gmail
+    new_pass_url
   end
 end

@@ -10,6 +10,7 @@ BCK_LOGIN_BTN: {id: 'redirect_to_login'}
 SND_INST_BTN: {id: 'reset_pwd_email_button'}
 PRFL_HEADR: {xpath: ".//*[@id='right_menu_content']/div/div[1]/div"}
 SAVE_BTN: {id: 'update_user_profile'}
-MAIL_NEW_PASS: {id: 'id_password'}
 MAIL_CNRM_PASS: {id: 'id_confirm_password'}
+CHNGE_BTN: {id: 'id_change_password_button'}
 LOGOUT: {xpath: ".//*[@id='left_menu_content']/div[1]/span/a[2]"}
+ERR_MSG: {id: 'alert_box'}

@@ -1,4 +1,5 @@
 require_relative '../lib/common_page'
+require 'gmail'
 
 # This class tests forgot password
 class ForgotPassword < CommonPage
@@ -6,11 +7,9 @@ class ForgotPassword < CommonPage
 
   def pass_chnge_email
     button_click(LOCATOR['FRGT_PASS_BTN'])
-    email_id = Constants::USERNAME_FORGOT
-    type(LOCATOR['USERNAME_INPUT'], email_id)
+    type(LOCATOR['USERNAME_INPUT'], Constants::EMAIL_USER)
     button_click(LOCATOR['SND_INST_BTN'])
     sleep 2
-    button_click(LOCATOR['BCK_LOGIN_BTN'])
   end
 
   def try(number_of_times)
@@ -18,7 +17,7 @@ class ForgotPassword < CommonPage
     item_of_interest = nil
     until item_of_interest != nil || count == number_of_times
       item_of_interest = yield
-      sleep 10
+      sleep 5
       count += 1
     end
   end
@@ -29,17 +28,17 @@ class ForgotPassword < CommonPage
       @email = gmail.inbox.emails(:unread, from: 'support@shopsocial.ly').last
     end
     message_body = @email.message.body.raw_source
-    @new_url = message_body.scan(/https?:\/\/[\S]+/).last
-    @username = message_body.scan(/username: (.*)$/)[0][0].strip
-    @password = message_body.scan(/password: (.*)$/)[0][0].strip
+    new_url = message_body.scan(/https?:\/\/[\S]+/).last
+    puts new_url
+    visit(new_url)
   end
 
   def new_pass_url
-    @driver.get @new_url
-    @driver.find_element(id: 'username').send_keys @username
-    @driver.find_element(id: 'password').send_keys @password
-    @driver.find_element(id: 'login').submit
-    expect(@driver.current_url.include?('/secure')).to eql true
+    typenew(LOCATOR['PASSWORD_INPUT'],Constants::EMAIL_PASSWORD)
+    typenew(LOCATOR['MAIL_CNRM_PASS'],Constants::EMAIL_PASSWORD)
+    button_click(LOCATOR['CHNGE_BTN'])
+    sleep 2
+    p is_displayed?(LOCATOR['ERR_MSG'])
   end
 
   def login(parameters = {})
@@ -90,3 +89,7 @@ class ForgotPassword < CommonPage
     button_click(LOCATOR['LOGOUT'])
   end
 end
+# Code to split and scan URL!!
+# urls = raw_input.split('http')
+# urls.shift
+# urls.map { |url| "http#{url}".strip.split(/[\s\,\;]/)[0] }
