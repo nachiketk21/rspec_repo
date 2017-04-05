@@ -12,6 +12,6 @@ RSpec.describe 'New sign up on zinrelo' do
 
   it 'should signup and create a new user' do
     @driver.persnl_creds
-    @driver.quit
+    # @driver.quit
   end
 end

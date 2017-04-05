@@ -1,9 +1,11 @@
 require 'uri'
 require 'yaml'
 require_relative '../lib/base_page'
+require_relative '../config/constants'
 
 # This class contains all basic methods used in all classes
 class CommonPage < BasePage
+  LOCATOR = YAML.load_file(File.open('../locators/login.yml'))
   def initialize(driver)
     super
   end
@@ -20,5 +22,14 @@ class CommonPage < BasePage
 
   def logout
     visit(Paths::LOGOUT)
+  end
+
+  def authentication(parameters = {})
+    username	= parameters[:username] || Constants::USERNAME_DEFAULT
+    password	= parameters[:password] || Constants::PASSWORD_DEFAULT
+
+    typenew(LOCATOR['USERNAME_INPUT'], username)
+    typenew(LOCATOR['PASSWORD_INPUT'], password)
+    button_click(LOCATOR['LOGIN_BUTTON'])
   end
 end
