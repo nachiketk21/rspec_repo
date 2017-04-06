@@ -15,6 +15,7 @@ module Constants
   LAST_NAME_DEFAULT = 'Doe'
 
   STORE_URL = 'https://nachiketteststore.myshopify.com/'
+  INT_PAGE = STORE_URL + 'collections/all'
   LOYALTY_PROG = 'Bee Loyal'
 
   USERNAME_FORGOT_PROFILE = 'nachiket+profile@shopsocially.com'

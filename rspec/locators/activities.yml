@@ -1,2 +1,16 @@
 PRL_TAB: {id: 'program_settings_tab'}
 ACT_TAB: {id: 'activities_tab'}
+ERN_PTS: {id: 'znearnpoints'}
+RWDS_TAB: {class: 'zinrelo-tab'}
+ACT_NM: {class: 'zn-earnpoints-name'}
+CRTN_EDIT: {xpath: ".//*[@id='activities_list_base_div']/div[1]/div/div/div[4]/div[1]"}
+PUR_ON_WEB_EDIT: {xpath: ".//*[@id='activities_list_base_div']/div[2]/div/div/div[4]/div[1]"}
+BB_EDIT: {xpath: ".//*[@id='activities_list_base_div']/div[3]/div/div/div[4]/div[1]"}
+ACT_NAME: {id: 'activity_name'}
+ACT_DESP: {id: 'activity_description'}
+NOTF_TXT: {id: 'notification_text'}
+PTS_PR_ACT: {id: 'points_per_activity'}
+ACT_ID: {id: 'activity_id'}
+RIGHT_SLIDR: {xpath: ".//*[@id='right_menu_content']/div/div/div[1]/div/div[3]/label"}
+SAVE_ACT: {xpath: ".//*[@id='right_menu_content']/div/div/div[3]/div[2]/button[1]"}
+CNCL_ACT: {xpath: ".//*[@id='right_menu_content']/div/div/div[3]/div[2]/button[2]"}

@@ -9,6 +9,7 @@ class ActivitiesHelper < Activities
     login_act
     go_to_activities_tab
     check_activities
+    edit_all_act
   end
 
 end

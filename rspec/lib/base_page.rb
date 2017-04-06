@@ -24,6 +24,12 @@ class BasePage
     @driver.get url_path
   end
 
+  def open_new_tab(url)
+    @driver.execute_script( 'window.open()')
+    @driver.switch_to.window( @driver.window_handles.last )
+    @driver.get url
+  end
+
   def current_url
     @driver.current_url
   end
@@ -137,5 +143,14 @@ class BasePage
   def scroll_down(locator)
     ele = find(locator)
     ele.location_once_scrolled_into_view
+  end
+
+  def switch_frame
+    @driver.switch_to.frame ('zrl_iframe')
+  end
+
+  def switch_back
+    @driver.close
+    @driver.switch_to.window(@driver.window_handles.first)
   end
 end
