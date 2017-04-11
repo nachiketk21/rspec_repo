@@ -4,8 +4,9 @@
 
 require_relative '../lib/common_page'
 
-class Activities<CommonPage
+class Activities < CommonPage
   LOCATOR = YAML.load_file(File.open('../locators/activities.yml'))
+  COMM = YAML.load_file(File.open('../locators/common.yml'))
 
   def login_act
     authentication
@@ -13,7 +14,7 @@ class Activities<CommonPage
 
   def go_to_activities_tab
     sleep 3
-    button_click(LOCATOR['PRL_TAB'])
+    button_click(COMM['PRL_TAB'])
     sleep 2
     button_click(LOCATOR['ACT_TAB'])
   end
@@ -59,6 +60,7 @@ class Activities<CommonPage
   end
 
 # Edit and check all fields in the editing of the activities
+  # TO DO - Check setting saved message
   def edit_all_act
     edit = %w[CRTN_EDIT PUR_ON_WEB_EDIT BB_EDIT]
     edit.each do |i|

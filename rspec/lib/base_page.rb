@@ -17,6 +17,10 @@ class BasePage
     @driver.quit
   end
 
+  def login_act
+    authentication
+  end
+
   # ----------------------------------------------------------------
   # Windows
   # ----------------------------------------------------------------
@@ -51,6 +55,7 @@ class BasePage
   end
 
   def finds(locator)
+    wait_for(locator)
     @driver.find_elements(locator)
   end
 
@@ -61,7 +66,6 @@ class BasePage
   # Verify ----------------------------------------------------------------
 
   def is_displayed?(locator)
-    wait_for(locator)
     begin
       return find(locator).displayed?
     rescue Selenium::WebDriver::Error::NoSuchElementError

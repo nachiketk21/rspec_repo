@@ -1,0 +1,18 @@
+RWDS_TAB: {id: 'rewards_tab'}
+ALL_RWDS: {xpath: ".//*[@id='rewards_list_base_div']/div"}
+RWD_NM: {xpath: ".//*[@id='rewards_list_base_div']/div[1]/div/div/div[4]/div[1]"}
+RDM_TYP: {id: 'redemption_type'}
+PR_DIS: {id: 'redemption_value'}
+DIS_NM: {id: 'redemption_name'}
+DES: {id: 'giftcard_description'}
+PTS_DEC: {id: 'allowed_redeem_points'}
+SAVE: {xpath: ".//*[@id='settings_content']/div/button[1]"}
+CANC: {xpath: ".//*[@id='settings_content']/div/button[2]"}
+MNGE_CODES: {id: 'manage_codes'}
+TTL_CODE: {xpath: ".//*[@id='codes_listing_content']/div[1]/h4"}
+NXT_BTN: {xpath: ".//*[@id='page-selection']/ul/li"}
+CPN_CDE: {xpath: ".//*[@id='codes_listing_content']/div[2]/table/tbody/tr"}
+SETTING: {id: 'settings'}
+
+
+

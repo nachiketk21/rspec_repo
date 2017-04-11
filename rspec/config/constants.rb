@@ -9,7 +9,7 @@ module Constants
   WINDOW_WIDTH_DEFAULT = '480'
   WINDOW_HEIGHT_DEFAULT = '640'
 
-  USERNAME_DEFAULT = 'nachiket+new@shopsocially.com'
+  USERNAME_DEFAULT = 'nachiket+forgot@shopsocially.com'
   PASSWORD_DEFAULT = 'test12345'
   FIRST_NAME_DEFAULT = 'James'
   LAST_NAME_DEFAULT = 'Doe'
