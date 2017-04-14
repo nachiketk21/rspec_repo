@@ -6,12 +6,12 @@ require_relative '../lib/base_page'
 
 RSpec.describe 'New sign up on zinrelo' do
   before :each do
-    @driver = SignupHelper.new Selenium::WebDriver.for :firefox
+    @driver = SignupHelper.new Selenium::WebDriver.for :chrome
     @driver.window_maximize
   end
 
   it 'should signup and create a new user' do
     @driver.persnl_creds
-    # @driver.quit
+    @driver.quit
   end
 end

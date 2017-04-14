@@ -1,0 +1,9 @@
+EMAIL_TAB: {id: 'email_notifications_tab'}
+ALL_MAIL_TEMLTS: {xpath: ".//*[@id='notification_loyalty_container']/div[1]/div/div/div"}
+EDIT_MAIL_BTN: {xpath: ".//*[@id='email_preview_tabs']/li[2]/div"}
+SAVE_BTN: {xpath: ".//*[@id='email_preview_footer']/div[1]/div"}
+ALRT_MSG: {id: 'alert_msg'}
+CLSE_MSG: {id: 'close_alert'}
+TOGL_INSDE: {xpath: ".//*[@id='loyalty_notification_header_icons']/label/label"}
+CLSE_TPLT: {xpath: ".//*[@id='loyalty_notification_edit_container']/a"}
+VAR_DROPDWN: {xpath: ".//*[@id='email_preview_tabs']/li[3]/div"}

@@ -9,8 +9,8 @@ class SignUp < CommonPage
     name	= parameters[:name] || Constants::FIRST_NAME_DEFAULT
     passwd	= parameters[:password] || Constants::PASSWORD_DEFAULT
     $a = rand(9999)
-    # email_id = "nachiket+#{$a}@shopsocially.com"
-    email_id = 'nachiket+new@shopsocially.com'
+    email_id = "nachiket+#{$a}@shopsocially.com"
+    # email_id = 'nachiket+new@shopsocially.com'
 
     type(LOCATOR['NAME'], name)
     type(LOCATOR['EMAIL'], email_id)
@@ -36,6 +36,7 @@ class SignUp < CommonPage
     2.times { button_click(LOCATOR['ACC_CREATN_TGL']) }
     2.times { button_click(LOCATOR['PUR_ON_WEB_TGL']) }
     2.times { button_click(LOCATOR['BIRTH_BONUS_TGL']) }
+    2.times { button_click(LOCATOR['RAF_TGL']) }
 
     button_click(LOCATOR['SCND_SCN_NXT'])
   end
@@ -55,11 +56,9 @@ class SignUp < CommonPage
   def send_coupons
     enter_cpn_codes(0, 2, '1_CPN_ADD', '1_CPN_CODES', '1_CPN_CODES_BTN')
     enter_cpn_codes(2, 4, '2_CPN_ADD', '2_CPN_CODES', '2_CPN_CODES_BTN')
-    button_click(LOCATOR['4_CPN_ADD'])
-    scroll_down(LOCATOR['4_CPN_CODES'])
-    button_click(LOCATOR['4_CPN_ADD'])
-    enter_cpn_codes(6, 9, '4_CPN_ADD', '4_CPN_CODES', '4_CPN_CODES_BTN')
     enter_cpn_codes(4, 6, '3_CPN_ADD', '3_CPN_CODES', '3_CPN_CODES_BTN')
+    enter_cpn_codes(6, 9, '4_CPN_ADD', '4_CPN_CODES', '4_CPN_CODES_BTN')
+
     button_click(LOCATOR['THRD_SCN_BTN'])
   end
 
@@ -67,6 +66,8 @@ class SignUp < CommonPage
     codes = %w(z i n r e l o r f)
     i = arr
     button_click(LOCATOR["#{opn_txt_bx}"])
+    scroll_down(LOCATOR["#{etr_cd}"])
+    scroll_down(LOCATOR["#{ad_btn}"])
     while i < max_arr do
       type(LOCATOR["#{etr_cd}"], "#{codes[i]}")
       type(LOCATOR["#{etr_cd}"], :return)
