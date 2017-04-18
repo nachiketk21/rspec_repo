@@ -2,7 +2,6 @@
 # Purpose:	Test the login page
 # ================================================================
 require_relative '../lib/common_page'
-require_relative '../pages/login'
 
 # All methods related to login
 class Login < CommonPage

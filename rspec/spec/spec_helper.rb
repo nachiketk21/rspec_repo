@@ -17,7 +17,7 @@ RSpec.configure do |config|
         @driver = Selenium::WebDriver.for :firefox
         @driver.manage.timeouts.implicit_wait	= 60
       when 'chrome'
-        Selenium::WebDriver::Chrome::Service.executable_path = File.join(Dir.pwd, '../vendor/chromedriver')
+        # Selenium::WebDriver::Chrome::Service.executable_path = File.join(Dir.pwd, '../vendor/chromedriver')
         @driver = Selenium::WebDriver.for :chrome
       end
     end

@@ -1,0 +1,9 @@
+NOTF_WIGT_TB: {id: 'bottom_widget'}
+DESKTP_TITLE: {xpath: ".//*[@id='title_box_div']/div[1]/div[1]"}
+D_FONT_COLR: {id: 'desktop_font_fill_color'}
+D_THEME_COLR: {id: 'desktop_theme_fill_color'}
+D_TXT: {id: 'desktop_font_text_input'}
+BTN_PLCE: {id: 'desktop_theme_btn_placement'}
+D_BCKGRD_CLR: {id: 'desktop_theme_color_icon'}
+D_APPLIED_CLR: {xpath: ".//*[@id='title_box_div']/div[1]/div[3]/div"}
+D_FONT_BTN_CLR: {id: 'desktop_font_color_icon'}

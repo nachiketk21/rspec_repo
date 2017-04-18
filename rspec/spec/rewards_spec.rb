@@ -12,8 +12,11 @@ describe 'Rewards test cases' do
     @driver.window_maximize
   end
 
+  after(:all) do
+    @driver.quit
+  end
+
   it 'should test all rewards are present' do
     @driver.test_rewards
-    @driver.quit
   end
 end

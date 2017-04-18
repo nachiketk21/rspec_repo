@@ -11,5 +11,4 @@ class ActivitiesHelper < Activities
     check_activities
     edit_all_act
   end
-
 end

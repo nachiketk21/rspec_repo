@@ -18,8 +18,4 @@ class LoginHelper < Login
     incorrect_username
     incorrect_password
   end
-
-  def quit
-    @driver.quit
-  end
 end

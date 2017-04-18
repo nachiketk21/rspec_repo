@@ -12,9 +12,12 @@ describe 'Forgot password' do
     @driver.window_maximize
   end
 
+  after(:all) do
+    @driver.quit
+  end
+
   it 'should test forgot password' do
     @driver.frgt_pass_mail
     @driver.profile_renew_pass
-    @driver.quit
   end
 end

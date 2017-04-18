@@ -16,8 +16,4 @@ class SignupHelper < SignUp
     add_coupons_screen
     theme
   end
-
-  def quit
-    @driver.quit
-  end
 end

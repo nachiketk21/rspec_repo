@@ -1,2 +1,3 @@
 PRL_TAB: {id: 'program_settings_tab'}
 NOTIF_TAB: {id: 'notifications_tab'}
+DESIGN_TAB: {id: 'design_tab'}

@@ -1,0 +1,45 @@
+* For point expiration testing*
+Before all:
+source
+EXPORT celery
+
+1. from pandora.db.models.(loyalty/zinrelo(For zinrelo related collections)) import *
+2. connect(db='ss_db',host='mongo_yoda')
+3. from pandora.tasks.zinrelo import *(for zinrelo related tasks)
+4. ZRLLoyaltyPointsAboutToExpireNotification.delay() (To run expiry notification task)
+5. Check if you get the email for expiry notif
+
+
+
+
+To check User details
+After conn to DB
+from pprint import pprint
+merchant_id = ''
+user_email=''
+
+LoyaltyTransaction.objects(merchant_id = merchant_id, user_email=user_email).order_by('-approved_time')
+(to get recent transactions)
+To print add 'pprint' before abv cmd
+pprint(LoyaltyTransaction.objects(merchant_id = merchant_id, user_email=user_email).order_by('-approved_time')[0]._data)
+
+
+*To check logs*
+sudo tailf /var/log/celeryd.log
+
+*To run birthday task*
+BirthdayBonusAwardPointsTask.delay()
+
+*To check last redeemed value*
+pprint (LoyaltyTransaction.objects(merchant_id = merchant_id, user_email=user_email,transaction_type = 'redeem').order_by('-approved_time')[0]._data)
+
+*To check winback email*
+1. pprint(SSFBUserMapping.objects(merchant_id = merchant_id, email=user_email)[0]._data)
+2. from dateutil.relativedelta import relativedelta
+3. today = datetime.utcnow()-relativedelta(months=1)
+4. today = datetime(today.year,today.month,today.day)
+5. SSFBUserMapping.objects(merchant_id = merchant_id, email=user_email).update(set__last_interaction_date=today)
+6. WinbackBonusMailOfferTask.delay()
+7. ys = datetime.utcnow() - relativedelta(days = 1)
+8. SSFBUserMapping.objects(merchant_id = merchant_id, email=user_email).update(set__winback_offer_expiry_date=ys)
+9. ResetWinbackExpiryTask.delay()

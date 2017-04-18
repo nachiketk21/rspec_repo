@@ -12,7 +12,7 @@ module Constants
   USERNAME_DEFAULT = 'nachiket+forgot@shopsocially.com'
   PASSWORD_DEFAULT = 'test12345'
   FIRST_NAME_DEFAULT = 'James'
-  LAST_NAME_DEFAULT = 'Doe'
+  LAST_NAME_DEFAULT = 'Bond'
 
   STORE_URL = 'https://nachiketteststore.myshopify.com/'
   INT_PAGE = STORE_URL + 'collections/all'

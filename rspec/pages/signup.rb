@@ -89,5 +89,6 @@ class SignUp < CommonPage
       j += 1
     end
     button_click(LOCATOR['FOURTH_SCN_BTN'])
+    sleep 5
   end
 end
