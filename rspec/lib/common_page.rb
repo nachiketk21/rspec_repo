@@ -5,7 +5,7 @@ require_relative '../config/constants'
 
 # This class contains all basic methods used in all classes
 class CommonPage < BasePage
-  LOCATOR = YAML.load_file(File.open('../locators/login.yml'))
+  LOCATOR = YAML.load_file(File.open('locators/login.yml'))
   def initialize(driver)
     super
   end

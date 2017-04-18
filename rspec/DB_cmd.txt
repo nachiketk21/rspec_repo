@@ -38,8 +38,8 @@ pprint (LoyaltyTransaction.objects(merchant_id = merchant_id, user_email=user_em
 2. from dateutil.relativedelta import relativedelta
 3. today = datetime.utcnow()-relativedelta(months=1)
 4. today = datetime(today.year,today.month,today.day)
-5. SSFBUserMapping.objects(merchant_id = merchant_id, email=user_email).update(set__last_interaction_date=today)
+5. SSFBUserMapping.objects(email=user_email).update(set__last_interaction_date=today)
 6. WinbackBonusMailOfferTask.delay()
 7. ys = datetime.utcnow() - relativedelta(days = 1)
-8. SSFBUserMapping.objects(merchant_id = merchant_id, email=user_email).update(set__winback_offer_expiry_date=ys)
+8. SSFBUserMapping.objects(email=user_email).update(set__winback_offer_expiry_date=ys)
 9. ResetWinbackExpiryTask.delay()

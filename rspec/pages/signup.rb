@@ -1,9 +1,8 @@
-# require_relative '../pages/signup'
 require_relative '../lib/common_page'
 
 # All methods for signup tests
 class SignUp < CommonPage
-  LOCATOR = YAML.load_file(File.open('../locators/signup.yml'))
+  LOCATOR = YAML.load_file(File.open('locators/signup.yml'))
 
   def fill_form(parameters = {})
     name	= parameters[:name] || Constants::FIRST_NAME_DEFAULT

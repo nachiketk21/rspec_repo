@@ -5,7 +5,7 @@ require_relative '../lib/common_page'
 
 # All methods related to login
 class Login < CommonPage
-  LOCATOR = YAML.load_file(File.open('../locators/login.yml'))
+  LOCATOR = YAML.load_file(File.open('locators/login.yml'))
 
   def check_page
     p is_displayed?(LOCATOR[:USERNAME_INPUT])

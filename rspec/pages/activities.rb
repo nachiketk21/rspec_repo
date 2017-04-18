@@ -5,8 +5,8 @@
 require_relative '../lib/common_page'
 
 class Activities < CommonPage
-  LOCATOR = YAML.load_file(File.open('../locators/activities.yml'))
-  COMM = YAML.load_file(File.open('../locators/common.yml'))
+  LOCATOR = YAML.load_file(File.open('locators/activities.yml'))
+  COMM = YAML.load_file(File.open('locators/common.yml'))
 
   def login_act
     authentication

@@ -4,7 +4,7 @@
 require_relative '../helper/login_helper'
 require 'rspec'
 require 'selenium-webdriver'
-require '../spec/spec_helper'
+require_relative '../spec/spec_helper'
 
 RSpec.describe 'Test login page' do
 
