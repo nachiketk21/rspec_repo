@@ -4,8 +4,8 @@ require_relative '../lib/common_page'
 # Test cases for notification widget
 ##################################################################
 class NotificationWidget  < CommonPage
-  LOCATOR = YAML.load_file(File.open('../locators/notif_widget.yml'))
-  COMM = YAML.load_file(File.open('../locators/common.yml'))
+  LOCATOR = YAML.load_file(File.open('locators/notif_widget.yml'))
+  COMM = YAML.load_file(File.open('locators/common.yml'))
 
   def open_notif_widgt
     sleep 3

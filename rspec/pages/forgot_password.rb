@@ -3,11 +3,12 @@ require 'gmail'
 
 # This class tests forgot password
 class ForgotPassword < CommonPage
-  LOCATOR = YAML.load_file(File.open('../locators/forgot_pass.yml'))
+
+  LOCATOR = YAML.load_file(File.open('locators/forgot_pass.yml'))
 
   def pass_chnge_email
     button_click(LOCATOR['FRGT_PASS_BTN'])
-    type(LOCATOR['USERNAME_INPUT'], Constants::EMAIL_USER)
+    type(LOCATOR['USERNAME_INPUT'], Constants::EMAIL_USERNAME)
     button_click(LOCATOR['SND_INST_BTN'])
     sleep 2
   end
@@ -29,8 +30,8 @@ class ForgotPassword < CommonPage
     end
     message_body = @email.message.body.raw_source
     new_url = message_body.scan(/https?:\/\/[\S]+/).last
-    puts new_url
-    visit(new_url)
+    get_reset_url(new_url)
+    visit($h_url[0])
   end
 
   def new_pass_url
@@ -42,7 +43,7 @@ class ForgotPassword < CommonPage
   end
 
   def login(parameters = {})
-    sleep 2
+    sleep 8
     username	= parameters[:username] || Constants::USERNAME_FORGOT_PROFILE
     password	= parameters[:password] || Constants::EMAIL_PASSWRD
 
@@ -62,7 +63,7 @@ class ForgotPassword < CommonPage
     type(LOCATOR['CNFRM_PASS'], new_pass)
     sleep 2
     button_click(LOCATOR['SAVE_BTN'])
-    button_click(LOCATOR['LOGOUT'])
+    check_success_msg
   end
 
   def login_again(parameters = {})
@@ -86,7 +87,20 @@ class ForgotPassword < CommonPage
     type(LOCATOR['NEW_PASS'], old_pass)
     type(LOCATOR['CNFRM_PASS'], old_pass)
     button_click(LOCATOR['SAVE_BTN'])
+    check_success_msg
+  end
+
+  def check_success_msg
+    sleep 3
+    p text_displayed?(LOCATOR['ERR_MSG'], 'x\nPassword changed for user nachiket+fpt@shopsocially.com')
     button_click(LOCATOR['LOGOUT'])
+  end
+
+  def get_reset_url(r_url)
+    urls = r_url.split('http')
+    urls.shift
+    my_url = urls.map { |url| "http#{url}".strip.split(/[\s\,\;]/)[0] }
+    $h_url = my_url[1].split '</a>'
   end
 end
 # Code to split and scan URL!!

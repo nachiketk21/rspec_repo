@@ -88,6 +88,7 @@ class BasePage
 
   # Forms: input, buttons & select ---------------------------------------------
   def typenew(locator, text)
+    wait_for(locator)
     clear(locator)
     find(locator).send_keys(text)
   end

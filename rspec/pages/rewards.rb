@@ -5,8 +5,8 @@
 require_relative '../lib/common_page'
 
 class Rewards < CommonPage
-  LOCATOR = YAML.load_file(File.open('../locators/rewards.yml'))
-  COMM = YAML.load_file(File.open('../locators/common.yml'))
+  LOCATOR = YAML.load_file(File.open('locators/rewards.yml'))
+  COMM = YAML.load_file(File.open('locators/common.yml'))
 
   def open_rewards
     sleep 3

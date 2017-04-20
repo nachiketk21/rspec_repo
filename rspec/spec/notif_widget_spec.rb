@@ -1,6 +1,6 @@
 require 'rspec'
 require 'selenium-webdriver'
-require '../spec/spec_helper'
+require_relative '../spec/spec_helper'
 require_relative '../helper/notif_widget_helper'
 
 describe 'Notification Widget' do

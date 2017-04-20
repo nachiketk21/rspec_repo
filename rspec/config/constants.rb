@@ -18,13 +18,13 @@ module Constants
   INT_PAGE = STORE_URL + 'collections/all'
   LOYALTY_PROG = 'Bee Loyal'
 
-  USERNAME_FORGOT_PROFILE = 'nachiket+profile@shopsocially.com'
+  USERNAME_FORGOT_PROFILE = 'nachiket+fpt@shopsocially.com'
   EMAIL_PASSWRD = '12345test'
   NEW_PASS = 'test12346'
   USERNAME_FORGOT = 'nachiket+forgot@shopsocially.com'
   PASSWORD_FORGOT = 'test12345'
-  EMAIL_USER = 'shopsmayank+test@gmail.com'
   EMAIL_USERNAME = 'shopsmayank@gmail.com'
   EMAIL_PASSWORD = 'shop2010'
   # rubocop:enable Style/MutableConstant
 end
+

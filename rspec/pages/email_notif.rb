@@ -1,8 +1,8 @@
 require_relative '../lib/common_page'
 
 class EmailNotification < CommonPage
-  LOCATOR = YAML.load_file(File.open('../locators/email_notif.yml'))
-  COMM = YAML.load_file(File.open('../locators/common.yml'))
+  LOCATOR = YAML.load_file(File.open('locators/email_notif.yml'))
+  COMM = YAML.load_file(File.open('locators/common.yml'))
 
   def open_notif
     sleep 3

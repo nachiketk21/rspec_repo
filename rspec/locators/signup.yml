@@ -18,6 +18,7 @@ ACC_CREATN_TGL: {xpath: ".//*[@id='mCSB_1_container']/div[1]/div[2]/div/label"}
 PUR_ON_WEB_TGL: {xpath: ".//*[@id='mCSB_1_container']/div[2]/div[2]/div/label"}
 BIRTH_BONUS_TGL: {xpath: ".//*[@id='mCSB_1_container']/div[3]/div[2]/div/label"}
 RAF_TGL: {xpath: ".//*[@id='mCSB_1_container']/div[4]/div[2]/div/label"}
+WIN_BCK_TGL: {xpath: ".//*[@id='mCSB_1_container']/div[5]/div[2]/div/label"}
 SCND_SCN_NXT: {id: 'id_second_screen_next_button'}
 1_CPN: {xpath: ".//*[@id='500_points_redeem_coupon_header']/div[1]"}
 2_CPN: {xpath: ".//*[@id='1000_points_redeem_fixed_coupon_header']/div[1]"}

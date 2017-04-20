@@ -43,3 +43,7 @@ pprint (LoyaltyTransaction.objects(merchant_id = merchant_id, user_email=user_em
 7. ys = datetime.utcnow() - relativedelta(days = 1)
 8. SSFBUserMapping.objects(email=user_email).update(set__winback_offer_expiry_date=ys)
 9. ResetWinbackExpiryTask.delay()
+
+*To update reports*
+1. ZinreloUpdateUserRevenueData.delay
+2. ZinreloUpdateDailyOutstandingBalanceData.delay
