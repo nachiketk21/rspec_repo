@@ -9,7 +9,7 @@ class SignUp < CommonPage
     passwd	= parameters[:password] || Constants::PASSWORD_DEFAULT
     $a = rand(9999)
     email_id = "nachiket+#{$a}@shopsocially.com"
-    # email_id = 'shopsmayank@gmail.com'
+    # email_id = 'nachiket+new22@zinrelo.com'
 
     type(LOCATOR['NAME'], name)
     type(LOCATOR['EMAIL'], email_id)

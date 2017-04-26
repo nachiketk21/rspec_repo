@@ -12,5 +12,14 @@ NOTF_TXT: {id: 'notification_text'}
 PTS_PR_ACT: {id: 'points_per_activity'}
 ACT_ID: {id: 'activity_id'}
 RIGHT_SLIDR: {xpath: ".//*[@id='right_menu_content']/div/div/div[1]/div/div[3]/label"}
-SAVE_ACT: {xpath: ".//*[@id='right_menu_content']/div/div/div[3]/div[2]/button[1]"}
-CNCL_ACT: {xpath: ".//*[@id='right_menu_content']/div/div/div[3]/div[2]/button[2]"}
+SAVE_ACT: {xpath: ".//*[@id='settings_content']/div/button[1]"}
+CNCL_ACT: {xpath: ".//*[@id='settings_content']/div/button[2]"}
+WINBCK_EDIT: {xpath: ".//*[@id='activities_list_base_div']/div[5]/div/div/div[4]/div[1]"}
+INACT_PRD: {id: 'inactivity_period'}
+RAF_EDT_BTN: {xpath: ".//*[@id='activities_list_base_div']/div[4]/div/div/div[4]/div[1]"}
+RAF_CPN: {id: 'referral_activity_generic_coupon'}
+RAF_IMG_UPLOAD: {id: 'referral_activity_facebook_post_image'}
+RAF_FB_TITLE: {id: 'referral_activity_facebook_post_title'}
+RAF_FB_DESP: {id: 'referral_activity_facebook_post_description'}
+RAF_TWEET: {id: 'referral_activity_twitter_default_twee'}
+
