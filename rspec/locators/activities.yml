@@ -21,5 +21,16 @@ RAF_CPN: {id: 'referral_activity_generic_coupon'}
 RAF_IMG_UPLOAD: {id: 'referral_activity_facebook_post_image'}
 RAF_FB_TITLE: {id: 'referral_activity_facebook_post_title'}
 RAF_FB_DESP: {id: 'referral_activity_facebook_post_description'}
-RAF_TWEET: {id: 'referral_activity_twitter_default_twee'}
-
+RAF_TWEET: {id: 'referral_activity_twitter_default_tweet'}
+MNG_RULS_TB: {id: 'manage_rules'}
+RULS_TYP: {xpath: ".//*[@id='add_rules_content']/div/form/div/div/select"}
+RUL_VAL: {id: 'rule_value'}
+RUL_CNDTN_1: {xpath: ".//*[@id='new_activity_conditions_base_div']/div/div[1]/select"}
+RUL_CNDTN_2: {xpath: ".//*[@id='new_activity_conditions_base_div']/div/div[2]/select"}
+RUL_DT: {xpath: ".//*[@id='new_activity_conditions_base_div']/div/div[3]/input[1]"}
+RUL_INPT: {xpath: ".//*[@id='new_activity_conditions_base_div']/div/div[4]/select"}
+ADD_CNDTN: {xpath: ".//*[@id='new_activity_conditions_base_div']/div/div[5]/button[1]"}
+DEL_CNDTN: {xpath: ".//*[@id='new_activity_conditions_base_div']/div/div[5]/button[2]"}
+SAVE_RULE: {xpath: ".//*[@id='add_rules_content']/div/div/div[3]/button[1]"}
+CANC_RULE: {xpath: ".//*[@id='add_rules_content']/div/div/div[3]/button[2]"}
+SETTING_TB: {id: 'settings'}

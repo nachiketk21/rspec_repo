@@ -6,7 +6,7 @@ require_relative '../helper/activities_helper'
 describe 'Activities test cases' do
 
     before :all do
-      @driver = ActivitiesHelper.new Selenium::WebDriver.for :firefox
+      @driver = ActivitiesHelper.new Selenium::WebDriver.for :chrome
       @driver.window_maximize
     end
 
