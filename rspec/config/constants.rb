@@ -9,8 +9,8 @@ module Constants
   WINDOW_WIDTH_DEFAULT = '480'
   WINDOW_HEIGHT_DEFAULT = '640'
 
-  USERNAME_DEFAULT = 'nachiket@zinrelo.com'
-  PASSWORD_DEFAULT = 'test12345'
+  USERNAME_DEFAULT = 'nachiket+notuse@zinrelo.com'
+  PASSWORD_DEFAULT = '12345test'
   FIRST_NAME_DEFAULT = 'James'
   LAST_NAME_DEFAULT = 'Bond'
 

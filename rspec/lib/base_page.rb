@@ -158,4 +158,10 @@ class BasePage
     @driver.close
     @driver.switch_to.window(@driver.window_handles.first)
   end
+
+  #Attribute-----------------------------------------------------------------------
+  def find_attribute(locator)
+    attr = find(locator)
+    attr.attribute 'value'
+  end
 end

@@ -1,0 +1,23 @@
+[{
+  "_id": {
+    "$oid": "5912ec300326c12af60dc9cf"
+  },
+  "merchant_id": "e73ae89a83",
+  "name": "Automation store",
+  "loyalty_program_name": "Automation rewards",
+  "merchant_key": "automationstore",
+  "img_url": "https://d3r6galw5k94i5.cloudfront.net/defaults/uninitialized_logo.gif",
+  "web_url": "https://nachiketteststore.myshopify.com/",
+  "creation_time": {
+    "$date": "2017-05-10T10:18:25.983Z"
+  },
+  "timezone": "UTC",
+  "num_transactions": 500,
+  "avg_order_value": 100.0,
+  "api_key": "485599f567c5e4620afe70fd3a1a6d72",
+  "is_store_active": false,
+  "merchant_sendgrid_dns_verified": false,
+  "basic_integration_done": false,
+  "advanced_integration_done": false,
+  "has_store_launched_once": false
+}]

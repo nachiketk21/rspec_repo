@@ -1,0 +1,276 @@
+[{
+  "_id": {
+    "$oid": "5912ec300326c12af60dc9d0"
+  },
+  "merchant_id": "e73ae89a83",
+  "activity_id": "created_an_account",
+  "activity_name": "Account Creation",
+  "activity_display_name_in_merchant_center": "Account Creation",
+  "activity_type": "fixed",
+  "activity_description": "Earn points when you create your loyalty account with us.",
+  "points_per_activity": 100,
+  "bonus_multiplier": 1.0,
+  "max_award_frequency": 1,
+  "max_award_frequency_interval": "lifetime",
+  "approval_method": "immediate",
+  "created_time": {
+    "$date": "2017-05-10T10:32:16.120Z"
+  },
+  "updated_time": {
+    "$date": "2017-05-10T10:47:59.142Z"
+  },
+  "is_active": true,
+  "ss_internal": true,
+  "qualified_points": true,
+  "is_sale_activity": false,
+  "show_on_merchant_center": true,
+  "show_activity_in_user_dashboard": true,
+  "fixed_duration_period": 30,
+  "loyalty_activity_img": "https://d1qbqkkh49kht1.cloudfront.net/c6dada872a795aafe92c30964f384470.png",
+  "notification_text": "Congrats! You've earned {{POINTS}} points for signing up",
+  "extra_parameters": {
+    
+  }
+},{
+  "_id": {
+    "$oid": "5912ec300326c12af60dc9d1"
+  },
+  "merchant_id": "e73ae89a83",
+  "activity_id": "made_a_purchase",
+  "activity_name": "Purchase on website",
+  "activity_display_name_in_merchant_center": "Purchase on website",
+  "activity_type": "bonus_multiplier",
+  "activity_description": "Earn 1 point for every dollar you spend in purchases on our site.",
+  "points_per_activity": 10,
+  "bonus_multiplier": 1.0,
+  "max_award_frequency": 1,
+  "max_award_frequency_interval": "day",
+  "approval_method": "immediate",
+  "created_time": {
+    "$date": "2017-05-10T10:32:16.120Z"
+  },
+  "updated_time": {
+    "$date": "2017-05-10T10:48:10.535Z"
+  },
+  "is_active": true,
+  "ss_internal": false,
+  "qualified_points": true,
+  "is_sale_activity": true,
+  "show_on_merchant_center": true,
+  "show_activity_in_user_dashboard": true,
+  "fixed_duration_period": 30,
+  "loyalty_activity_img": "https://d1qbqkkh49kht1.cloudfront.net/fb112084ec96f50e717a86bb8d52d589.png",
+  "notification_text": "Congrats! You've earned {{POINTS}} points for your purchase",
+  "extra_parameters": {
+    
+  }
+},{
+  "_id": {
+    "$oid": "5912ec300326c12af60dc9d2"
+  },
+  "merchant_id": "e73ae89a83",
+  "activity_id": "birthday_bonus",
+  "activity_name": "Birthday Bonus",
+  "activity_display_name_in_merchant_center": "Birthday Bonus",
+  "activity_type": "fixed",
+  "activity_description": "Award points on birthday.",
+  "points_per_activity": 100,
+  "bonus_multiplier": 1.0,
+  "max_award_frequency": 1,
+  "max_award_frequency_interval": "year",
+  "approval_method": "immediate",
+  "created_time": {
+    "$date": "2017-05-10T10:32:16.121Z"
+  },
+  "updated_time": {
+    "$date": "2017-05-10T10:32:16.121Z"
+  },
+  "is_active": true,
+  "ss_internal": true,
+  "qualified_points": true,
+  "is_sale_activity": false,
+  "show_on_merchant_center": true,
+  "show_activity_in_user_dashboard": true,
+  "fixed_duration_period": 30,
+  "loyalty_activity_img": "https://d1qbqkkh49kht1.cloudfront.net/c6dada872a795aafe92c30964f384470.png",
+  "notification_text": "Happy Birthday!! Here's a small gift of {{POINTS}} points.",
+  "extra_parameters": {
+    
+  }
+},{
+  "_id": {
+    "$oid": "5912ec300326c12af60dc9d3"
+  },
+  "merchant_id": "e73ae89a83",
+  "activity_id": "referral",
+  "activity_name": "Refer a Friend",
+  "activity_display_name_in_merchant_center": "Refer a Friend",
+  "activity_type": "fixed",
+  "activity_description": "Award points on referral purchase.",
+  "points_per_activity": 100,
+  "bonus_multiplier": 1.0,
+  "max_award_frequency": 1,
+  "max_award_frequency_interval": "year",
+  "approval_method": "immediate",
+  "created_time": {
+    "$date": "2017-05-10T10:32:16.122Z"
+  },
+  "updated_time": {
+    "$date": "2017-05-10T10:32:16.122Z"
+  },
+  "is_active": true,
+  "ss_internal": true,
+  "qualified_points": true,
+  "is_sale_activity": false,
+  "show_on_merchant_center": true,
+  "show_activity_in_user_dashboard": true,
+  "fixed_duration_period": 30,
+  "loyalty_activity_img": "https://d1qbqkkh49kht1.cloudfront.net/c6dada872a795aafe92c30964f384470.png",
+  "notification_text": "Congrats!! You've earned {{POINTS}} points for referring us to your friend.",
+  "extra_parameters": {
+    "friend_incentive_type": "coupon_based",
+    "minimum_purchase_amount": 100,
+    "intermediate_page_popup": "\u003cdiv style=\"border:solid 1px rgba(0,0,0,0.2);font-family:'Source Sans Pro','Helvetica Neue','Lucida Sans',sans-serif;background:white; width: 700px; height: 500px;\"\u003e\u003cdiv style=\"margin-top: 75px;margin-bottom: 75px;margin-left: auto;width: 475px;border-radius:         3px;/* height: 350px; */margin-right: auto;font-size:15px;background:white;border: solid 2px rgba(255,201,0,0.4);\"\u003e\u003c!--  STORE NAME --\u003e\u003cdiv style=\"font-weight:bold;text-align:center;font-size: 25px;padding-top: 8px;\"\u003e{{STORE_NAME}}\u003c/div\u003e\u003chr style=\"border: solid 2px rgba(255, 201, 0, 0.4);width: 425px;\"\u003e\u003cdiv style=\"text-align:center;padding: 20px;font-size: 18px;letter-spacing: 0.03em;line-height:30px\"\u003e Congrats!! Your friend {{FIRST_NAME}} has gifted you a coupon code -\u003cbr\u003e\u003cinput style=\"margin: 0 auto; width: 80%; font-size: 14px; text-align: center; margin-top: 15px; border: 3px dotted; background: white; color: rgba(0,0,0,0.4); padding: 15px;\" value=\"{{COUPON_CODE}}\" disabled/\u003e\u003cbr\u003e\u003cdiv style=\"margin-top: 30px;font-size: 18px;/* border: solid 1px grey; */\"\u003eCopy this coupon code and use it at checkout to get amazing discounts.\u003c/div\u003e \u003c/div\u003e\u003c/div\u003e\u003c/div\u003e",
+    "facebook_post_image": "https://zinrelo.com/",
+    "fixed_amount_discount": 10,
+    "percentage_discount": 10.0,
+    "facebook_post_description": "Awesome products at great prices. You should really check them out.",
+    "facebook_post_title": "They have cool stuff!",
+    "generic_coupon": "GEN1001",
+    "intermediate_page_popup_mobile": "\u003cdiv style=\"border:solid 1px rgba(0,0,0,0.2);font-family:'Source Sans Pro','Helvetica Neue','Lucida Sans',sans-serif;background:white; width: 350px; height: 400px; margin-left: 95px;margin-top:25px;\"\u003e\u003cdiv style=\"margin-left: auto;border-radius: 3px;margin-right: auto;font-size:15px;background:white;border: solid 2px rgba(255,201,0,0.4);\"\u003e\u003c!--  STORE NAME --\u003e\u003cdiv style=\"font-weight:bold;text-align:center;font-size: 25px;padding-top: 8px;\"\u003e{{STORE_NAME}}\u003c/div\u003e\u003chr style=\"border: solid 2px rgba(255, 201, 0, 0.4);\"\u003e\u003cdiv style=\"text-align:center;padding: 20px;font-size: 18px;letter-spacing: 0.03em;line-height:30px\"\u003e Congrats!! Your friend {{FIRST_NAME}} has gifted you a coupon code -\u003cbr\u003e\u003cinput style=\"margin: 0 auto; width: 80%; font-size: 14px; text-align: center; margin-top: 15px; border: 3px dotted; background: white; color: rgba(0,0,0,0.4); padding: 15px;\" value=\"{{COUPON_CODE}}\" disabled/\u003e\u003cbr\u003e\u003cdiv style=\"margin-top: 30px;font-size: 18px;\"\u003eCopy this coupon code and use it at checkout to get amazing discounts.\u003c/div\u003e \u003c/div\u003e\u003c/div\u003e\u003c/div\u003e",
+    "twitter_default_tweet": "Hey checkout this awesome website!!"
+  }
+},{
+  "_id": {
+    "$oid": "5912ec300326c12af60dc9d4"
+  },
+  "merchant_id": "e73ae89a83",
+  "activity_id": "winback_bonus",
+  "activity_name": "Winback Bonus",
+  "activity_display_name_in_merchant_center": "Winback Bonus",
+  "activity_type": "fixed",
+  "activity_description": "Reward points to wakeup your dormant users.",
+  "points_per_activity": 100,
+  "bonus_multiplier": 1.0,
+  "max_award_frequency": 1,
+  "max_award_frequency_interval": "year",
+  "approval_method": "immediate",
+  "created_time": {
+    "$date": "2017-05-10T10:32:16.123Z"
+  },
+  "updated_time": {
+    "$date": "2017-05-10T10:32:16.123Z"
+  },
+  "is_active": true,
+  "ss_internal": true,
+  "qualified_points": true,
+  "is_sale_activity": false,
+  "show_on_merchant_center": true,
+  "show_activity_in_user_dashboard": true,
+  "fixed_duration_period": 30,
+  "loyalty_activity_img": "https://d1qbqkkh49kht1.cloudfront.net/c6dada872a795aafe92c30964f384470.png",
+  "notification_text": "",
+  "extra_parameters": {
+    "inactivity_period_months": 3,
+    "winback_validity_days": 7
+  }
+},{
+  "_id": {
+    "$oid": "5912ec300326c12af60dc9d5"
+  },
+  "merchant_id": "e73ae89a83",
+  "activity_id": "share_on_facebook",
+  "activity_name": "Share on Facebook",
+  "activity_display_name_in_merchant_center": "Share on Facebook",
+  "activity_type": "fixed",
+  "activity_description": "Reward points to users when they share you on Facebook.",
+  "points_per_activity": 100,
+  "bonus_multiplier": 1.0,
+  "max_award_frequency": 1,
+  "max_award_frequency_interval": "day",
+  "approval_method": "immediate",
+  "created_time": {
+    "$date": "2017-05-10T10:32:16.124Z"
+  },
+  "updated_time": {
+    "$date": "2017-05-10T10:32:16.124Z"
+  },
+  "is_active": true,
+  "ss_internal": true,
+  "qualified_points": true,
+  "is_sale_activity": false,
+  "show_on_merchant_center": true,
+  "show_activity_in_user_dashboard": true,
+  "fixed_duration_period": 30,
+  "loyalty_activity_img": "https://d1qbqkkh49kht1.cloudfront.net/c6dada872a795aafe92c30964f384470.png",
+  "notification_text": "",
+  "extra_parameters": {
+    
+  }
+},{
+  "_id": {
+    "$oid": "5912ec300326c12af60dc9d6"
+  },
+  "merchant_id": "e73ae89a83",
+  "activity_id": "share_on_twitter",
+  "activity_name": "Share on Twitter",
+  "activity_display_name_in_merchant_center": "Share on Twitter",
+  "activity_type": "fixed",
+  "activity_description": "Reward points to users when they share you on Twitter.",
+  "points_per_activity": 100,
+  "bonus_multiplier": 1.0,
+  "max_award_frequency": 1,
+  "max_award_frequency_interval": "day",
+  "approval_method": "immediate",
+  "created_time": {
+    "$date": "2017-05-10T10:32:16.124Z"
+  },
+  "updated_time": {
+    "$date": "2017-05-10T10:32:16.124Z"
+  },
+  "is_active": true,
+  "ss_internal": true,
+  "qualified_points": true,
+  "is_sale_activity": false,
+  "show_on_merchant_center": true,
+  "show_activity_in_user_dashboard": true,
+  "fixed_duration_period": 30,
+  "loyalty_activity_img": "https://d1qbqkkh49kht1.cloudfront.net/c6dada872a795aafe92c30964f384470.png",
+  "notification_text": "",
+  "extra_parameters": {
+    
+  }
+},{
+  "_id": {
+    "$oid": "5912ec300326c12af60dc9d7"
+  },
+  "merchant_id": "e73ae89a83",
+  "activity_id": "share_on_pinterest",
+  "activity_name": "Share on Pinterest",
+  "activity_display_name_in_merchant_center": "Share on Pinterest",
+  "activity_type": "fixed",
+  "activity_description": "Reward points to users when they share you on Pinterest.",
+  "points_per_activity": 100,
+  "bonus_multiplier": 1.0,
+  "max_award_frequency": 1,
+  "max_award_frequency_interval": "day",
+  "approval_method": "immediate",
+  "created_time": {
+    "$date": "2017-05-10T10:32:16.125Z"
+  },
+  "updated_time": {
+    "$date": "2017-05-10T10:32:16.125Z"
+  },
+  "is_active": true,
+  "ss_internal": true,
+  "qualified_points": true,
+  "is_sale_activity": false,
+  "show_on_merchant_center": true,
+  "show_activity_in_user_dashboard": true,
+  "fixed_duration_period": 30,
+  "loyalty_activity_img": "https://d1qbqkkh49kht1.cloudfront.net/c6dada872a795aafe92c30964f384470.png",
+  "notification_text": "",
+  "extra_parameters": {
+    
+  }
+}]

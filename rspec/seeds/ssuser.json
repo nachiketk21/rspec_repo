@@ -1,0 +1,80 @@
+[{
+  "_id": {
+    "$oid": "5912eba50326c12af60dc9cd"
+  },
+  "screen_name": "nachiket. ",
+  "is_business_account": true,
+  "first_name": "Nachiket",
+  "last_name": " ",
+  "email": "nachiket+notuse@zinrelo.com",
+  "profile_url": "",
+  "profile_image": "",
+  "user_creation_time": {
+    "$date": "2017-05-10T10:29:57.188Z"
+  },
+  "last_login_time": {
+    "$date": "2017-05-10T10:29:57.188Z"
+  },
+  "current_login_time": {
+    "$date": "2017-05-10T10:29:57.188Z"
+  },
+  "fb_permissions": [
+    
+  ],
+  "fb_friends": [
+    
+  ],
+  "num_friends": 0,
+  "total_fb_friends": 0,
+  "fb_interests": [
+    
+  ],
+  "num_shares": 0,
+  "num_shouts": 0,
+  "num_recos": 0,
+  "is_twitter_linked": false,
+  "visibility_only_friends": false,
+  "badges": [
+    
+  ],
+  "badge_details": [
+    
+  ],
+  "badge_activity_time": {
+    "$date": "2017-05-10T10:29:57.188Z"
+  },
+  "num_badges": 0,
+  "email_invites": 0,
+  "invited_emails": [
+    
+  ],
+  "fb_invites": 0,
+  "invited_fbids": [
+    
+  ],
+  "admin": false,
+  "classified": 0,
+  "acq_source_type": 0,
+  "allow_api_access": false,
+  "partner_merchants_linked": [
+    
+  ],
+  "liked_fbpage": [
+    
+  ],
+  "username": "nachiket+notuse@zinrelo.com",
+  "password": "$2a$03$ENiJfUonbbGKgxcFXOvWqu0nQMhV3rDnDa9VRdeVVL7nVJmosVlzS",
+  "salt_key": "$2a$03$ENiJfUonbbGKgxcFXOvWqu",
+  "session_id": "ab869844-6e71-4c4e-a8bc-09a88fb96ea0",
+  "credentials": {
+    "merchant_admin": [
+      "automationstore"
+    ],
+    "merchant_admin_roles": {
+      
+    },
+    "merchant_permission_scope": {
+      
+    }
+  }
+}]

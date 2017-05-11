@@ -47,3 +47,4 @@ pprint (LoyaltyTransaction.objects(merchant_id = merchant_id, user_email=user_em
 *To update reports*
 1. ZinreloUpdateUserRevenueData.delay
 2. ZinreloUpdateDailyOutstandingBalanceData.delay
+

@@ -9,6 +9,7 @@ class Activities < CommonPage
   COMM = YAML.load_file(File.open('locators/common.yml'))
   $all_ele = %w[ACT_NAME ACT_DESP NOTF_TXT PTS_PR_ACT]
   $win_bk = %w[ACT_NAME ACT_DESP PTS_PR_ACT INACT_PRD]
+  $ss_act = %w[ACT_NAME ACT_DESP PTS_PR_ACT]
 
   def login_act
     authentication
@@ -24,18 +25,23 @@ class Activities < CommonPage
   def check_activities
     sleep 2
     i = 1
-    while i < 6 do
+    while i < 9 do
       act = @driver.find_element(:xpath , ".//*[@id='activities_list_base_div']/div[#{i}]/div/div/div[2]/div")
       p act.text
       i += 1
     end
   end
 
-  def sel_actv
-    i = 1
-    while i < 6 do
-      act = @driver.find_element(:xpath , ".//*[@id='activities_list_base_div']/div[#{i}]/div/div/div[4]/div[2]/label")
+  def edit_social_actv
+    i = 6
+    while i < 9 do
+      act = @driver.find_element(:xpath , ".//*[@id='activities_list_base_div']/div[#{i}]/div/div/div[4]/div[1]")
       act.click
+      edit_act($ss_act)
+      p find_attribute(LOCATOR['ACT_ID'])
+      save_act
+      cancel_act
+      i += 1
     end
   end
 # This method opens the page with integration.
@@ -69,12 +75,14 @@ class Activities < CommonPage
       button_click(LOCATOR["#{i}"])
       if i == 'BB_EDIT'
        edit_act($all_ele)
+       p find_attribute(LOCATOR['ACT_ID'])
        save_act
        cancel_act
       else
         edit_act($all_ele)
+        p find_attribute(LOCATOR['ACT_ID'])
         save_act
-        acc_creation_rules
+        # acc_creation_rules
         cancel_act
       end
     end
@@ -84,6 +92,7 @@ class Activities < CommonPage
     save_act
     cancel_act
     raf
+    edit_social_actv
   end
 
   def save_act
@@ -101,6 +110,7 @@ class Activities < CommonPage
     sleep 2
     ele = %w[ACT_NAME ACT_DESP PTS_PR_ACT RAF_CPN RAF_IMG_UPLOAD RAF_FB_TITLE RAF_FB_DESP RAF_TWEET]
     edit_act(ele)
+    p find_attribute(LOCATOR['ACT_ID'])
     save_act
     cancel_act
   end
