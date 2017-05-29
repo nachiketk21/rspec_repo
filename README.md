@@ -1,6 +1,6 @@
 **This suite uses ruby and modified rspec framework. I also have used seeds which will seed data into the test db and will be used to run tests locally, the reason behind this was the data will never be corrupted and always data will be seeded to the db to avoid any failures due to data.**
 
-# Follow the steps below to setup and run tests for zinrelo
+# Follow the steps below to setup and run tests
 
 
 # Install Ruby
