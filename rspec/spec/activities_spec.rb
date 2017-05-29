@@ -3,7 +3,7 @@ require 'selenium-webdriver'
 require_relative '../spec/spec_helper'
 require_relative '../helper/activities_helper'
 
-describe 'Activities test cases' do
+describe 'Activities test cases', feature: 'activities' do
 
     before :all do
       @driver = ActivitiesHelper.new Selenium::WebDriver.for :chrome
